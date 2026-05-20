@@ -8,7 +8,7 @@ A structured security and operational audit of a live AWS environment, covering 
 
 This project documents the end-to-end audit of an AWS environment across key risk domains. The goal was to establish a clear baseline of the current security posture, identify high-risk findings, and produce actionable remediation runbooks with verified CLI steps.
 
-All changes to the live environment follow a strict change record process — audit first, document fully, then act.
+All changes to the live environment follow a strict change record process: audit first, document fully, then act.
 
 ---
 
@@ -20,8 +20,8 @@ All changes to the live environment follow a strict change record process — au
 | **Network** | Security groups, publicly accessible resources, VPC exposure |
 | **Compute** | EC2 instances, Elastic Beanstalk environments, runtime lifecycle |
 | **Database** | RDS/Aurora instances, public accessibility, engine versions |
-| **Storage** | EBS volumes — encryption status, type (gp2/gp3), attachment state |
-| **Serverless** | Lambda functions — runtime versions, EOL status |
+| **Storage** | EBS volumes: encryption status, type (gp2/gp3), attachment state |
+| **Serverless** | Lambda functions: runtime versions, EOL status |
 | **Cost** | Unattached resources, oversized instances, storage class optimization |
 
 ---
@@ -37,7 +37,7 @@ All changes to the live environment follow a strict change record process — au
 - Majority of IAM users without MFA enabled
 - Long-lived access keys (some exceeding 365 days) on active accounts
 - Overly broad managed policies with wildcard actions on sensitive services
-- AWS Config not recording IAM changes — no audit trail
+- AWS Config not recording IAM changes, leaving no audit trail
 
 ### Compute Lifecycle
 - Elastic Beanstalk environments running Amazon Linux 1 (EOL)
