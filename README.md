@@ -97,3 +97,9 @@ aws-infrastructure-audit/
 - PowerShell, Bash / Git
 
 > All resource identifiers, account IDs, ARNs, IP addresses, and internal naming have been sanitized.
+
+
+## Architecture Diagram
+
+![AWS Security Posture Architecture](docs/diagrams/07_security-posture-architecture.png)
+
